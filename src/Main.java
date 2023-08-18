@@ -94,6 +94,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int opcion;
         String nuevoNombre;
+        String nuevoEstadio;
 
         do {
             System.out.println("1. Mostrar información de los equipos");
@@ -104,6 +105,10 @@ public class Main {
             System.out.println("6. Asignar entrenador al Ind Medellín");
             System.out.println("7. Asignar entrenador a Millonarios");
             System.out.println("8. Asignar entrenador al Cúcuta Deportivo");
+            System.out.println("9. Cambiar el estadio del Nacional");
+            System.out.println("10. Cambiar el estadio del Ind Medellín");
+            System.out.println("11. Cambiar el estadio de Millonarios");
+            System.out.println("12. Cambiar el estadio del Cúcuta Deportivo");
             System.out.println("0. Salir del programa.");
             opcion = sc.nextInt();
 
@@ -198,6 +203,30 @@ public class Main {
                     System.out.print("Ingrese el nombre del entrenador: ");
                     nuevoNombre = sc.nextLine();
                     cucuta.setEntrenador(nuevoNombre);
+                    break;
+                case 9:
+                    sc.nextLine();
+                    System.out.print("Ingrese el nombre del estadio: ");
+                    nuevoEstadio = sc.nextLine();
+                    nacional.setEstadio(nuevoEstadio);
+                    break;
+                case 10:
+                    sc.nextLine();
+                    System.out.print("Ingrese el nombre del estadio: ");
+                    nuevoEstadio = sc.nextLine();
+                    medellin.setEstadio(nuevoEstadio);
+                    break;
+                case 11:
+                    sc.nextLine();
+                    System.out.print("Ingrese el nombre del estadio: ");
+                    nuevoEstadio = sc.nextLine();
+                    millos.setEstadio(nuevoEstadio);
+                    break;
+                case 12:
+                    sc.nextLine();
+                    System.out.print("Ingrese el nombre del estadio: ");
+                    nuevoEstadio = sc.nextLine();
+                    cucuta.setEstadio(nuevoEstadio);
                     break;
                 case 0:
                     System.out.println("Saliendo del programa");
